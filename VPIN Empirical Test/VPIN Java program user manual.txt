@@ -1,0 +1,28 @@
+Instructions to using the program:
+
+1. unzip all files in a folder, e.g C:\algo
+
+2. launch command prompt and go to the directory of the above folder:
+	cd c:\algo
+
+3. compile our program: 
+	javac -cp commons-math3-3.5.jar;guava-18.0.jar *.java
+	
+4. run our program by:
+	java -cp guava-18.0.jar;commons-math3-3.5.jar;. VPIN "c:\\algo" "C:/algo/MDVN_NOV25_SECONDS.csv" "MDVN" "second" "1000" "20"
+
+For the above parameters:
+"c:\\algo": output directory
+"C:/algo/MDVN_NOV25_SECONDS.csv": input data file full path
+"MDVN": stock ticker
+"second": this parameter specifies the level of granularity in the data file. Use "second" when use "MDVN_NOV25_SECONDS.csv" and change to "minute" when use "MDVN_NOV1926_MINUTES.csv"
+"1000": how many volume bars for the entire period
+"20": how many volume bars for one vpin bar
+	
+	
+5. find output file in c:\algo
+
+
+In the zip file there's also 2 sample input data file:
+MDVN_NOV25_SECONDS.csv
+MDVN_NOV1926_MINUTES.csv
